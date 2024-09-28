@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=281 height=605 tabindex="-1" style="width: 281px; height: 605px; background: #231F20"></canvas>
-    <script src="Build/GV_Build.loader.js"></script>
+    <script src="Build/GrottoVert_WebGL.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/GV_Build.data",
-        frameworkUrl: "Build/GV_Build.framework.js",
-        codeUrl: "Build/GV_Build.wasm",
+        dataUrl: "Build/GrottoVert_WebGL.data",
+        frameworkUrl: "Build/GrottoVert_WebGL.framework.js",
+        codeUrl: "Build/GrottoVert_WebGL.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "VerticalPlatformer",
